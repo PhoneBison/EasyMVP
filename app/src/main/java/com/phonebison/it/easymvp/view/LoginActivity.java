@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
     }
 
     @Override
-    public void onClear() {
+    public void onClearText() {
         mUserName.setText("");
         mPassWord.setText("");
         Toast.makeText(this,"很干净了！",Toast.LENGTH_SHORT).show();

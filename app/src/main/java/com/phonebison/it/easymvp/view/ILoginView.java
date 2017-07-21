@@ -6,7 +6,7 @@ package com.phonebison.it.easymvp.view;
 
 public interface ILoginView {
 
-    public void onClear();
+    public void onClearText();
 
     public void onLoginResult(Boolean result,int code);
 }
