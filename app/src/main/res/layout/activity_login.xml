@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phonebison.it.easymvp.view.LoginActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/transparent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入你的用户名.."/>
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/ll_user"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:id="@+id/ll_pwd"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/transparent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码：" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入你的密码.."/>
+        </LinearLayout>
+
+        <View
+            android:layout_below="@+id/ll_pwd"
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/view2"
+            android:id="@+id/ll_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:layout_height="wrap_content"
+                android:text="清空"/>
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:layout_height="wrap_content"
+                android:text="登录"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
